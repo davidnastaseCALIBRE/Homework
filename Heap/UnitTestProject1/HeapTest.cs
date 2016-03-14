@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace UnitTestProject1
 {
     [TestClass]
-    public class UnitTest1
+    public class HeapTest
     {
         [TestMethod]
         [ExpectedException(typeof(System.NullReferenceException))]
@@ -13,16 +13,16 @@ namespace UnitTestProject1
             Heap test = new Heap();
             Assert.AreEqual(0, test.Size());
 
-            test.Size(); //Should throw an exception.
+            test.ExtractMax();
         }
 
-        [TestClass]
+        [TestMethod]
         public void HeapInsert()
         {
             
         }
 
-        [TestClass]
+        [TestMethod]
         public void meh()
         {
 
